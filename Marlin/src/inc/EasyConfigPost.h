@@ -279,7 +279,7 @@
     #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 140 }
 #else
     #define INVERT_E0_DIR false
-    #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 100 }
+    #define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.6, 80, 400, 812 }
 #endif
 
 //
@@ -306,10 +306,10 @@
 #if (ET_MODEL & ET_SERIES_5)
     #define X_BED_SIZE 300
     #define Y_BED_SIZE 300
-    #define X_MIN_POS 0
-    #define Y_MIN_POS -15
+    #define X_MIN_POS -49.5
+    #define Y_MIN_POS -37.5
     #define Z_MIN_POS 0
-    #define X_MAX_POS (X_BED_SIZE + 50)
+    #define X_MAX_POS (X_BED_SIZE + 5)
     #define Y_MAX_POS Y_BED_SIZE
     #define Z_MAX_POS (400 + ET_Z_MAX_POS_EXTRA)
 #elif (ET_MODEL & ET_SERIES_4)
